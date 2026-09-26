@@ -12,6 +12,7 @@
       underline indicator on change, so a tab restored from storage otherwise
       shows the right content under the wrong underline. */
 (function () {
+  window.__deviceTabs = "3";                                 /* build marker, for checking what a browser loaded */
   var PHONE = "(max-width: 44.9375em)";
   var canStore = typeof __md_get === "function" && typeof __md_set === "function";
   try { localStorage.removeItem("__tabs"); } catch (e) {}   /* key from the first build */
