@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" role="img" aria-label="Anatomy of a Blossom screen: a left sidebar grouped into Overview, Operations and Records; your farm, role and the season at the bottom of that sidebar; tabs across the top of each section; and a search box above every list.">
+  <rect x="0" y="0" width="1000" height="600" rx="16" fill="#f6faf3"/>
+
+  <!-- app window -->
+  <rect x="262" y="96" width="476" height="440" rx="10" fill="#ffffff" stroke="#cfd8cf" stroke-width="1.5"/>
+
+  <!-- sidebar panel -->
+  <path d="M262 106 a10 10 0 0 1 10 -10 h120 v440 h-120 a10 10 0 0 1 -10 -10 Z" fill="#fbfcfa"/>
+  <line x1="392" y1="96" x2="392" y2="536" stroke="#eceff1" stroke-width="1.5"/>
+  <text x="280" y="126" fill="#6aab3f" font-size="15" font-weight="700">blossom</text>
+
+  <!-- group: overview -->
+  <text x="280" y="156" fill="#90a4ae" font-size="7.5" font-weight="700" letter-spacing="0.9">OVERVIEW</text>
+  <g fill="#546e7a" font-size="10.5">
+    <text x="280" y="174">Dashboard</text>
+    <text x="280" y="206">Map</text>
+    <text x="280" y="222">Calendar</text>
+    <text x="280" y="238">Weather</text>
+  </g>
+  <!-- active item -->
+  <rect x="270" y="179" width="112" height="16" rx="5" fill="#e8f2df"/>
+  <text x="280" y="190" fill="#4a8a28" font-size="10.5" font-weight="700">Beds</text>
+
+  <!-- group: operations -->
+  <text x="280" y="264" fill="#90a4ae" font-size="7.5" font-weight="700" letter-spacing="0.9">OPERATIONS</text>
+  <g fill="#546e7a" font-size="10.5">
+    <text x="280" y="282">Applications</text>
+    <text x="280" y="298">Tests</text>
+    <text x="280" y="314">Scouting</text>
+    <text x="280" y="330">Maintenance</text>
+    <text x="280" y="346">Harvest</text>
+    <text x="280" y="362">Water</text>
+  </g>
+
+  <!-- group: records -->
+  <text x="280" y="388" fill="#90a4ae" font-size="7.5" font-weight="700" letter-spacing="0.9">RECORDS</text>
+  <text x="280" y="406" fill="#546e7a" font-size="10.5">Reports</text>
+
+  <!-- sidebar bottom: farm, role, season -->
+  <rect x="270" y="446" width="76" height="32" rx="6" fill="#ffffff" stroke="#e0e6e0"/>
+  <rect x="276" y="454" width="16" height="16" rx="5" fill="#6aab3f"/>
+  <text x="281" y="466" fill="#ffffff" font-size="9" font-weight="700">T</text>
+  <text x="298" y="461" fill="#37474f" font-size="8.5" font-weight="700">Tidmarsh</text>
+  <text x="298" y="472" fill="#90a4ae" font-size="7.5">Farm admin</text>
+  <rect x="352" y="446" width="30" height="32" rx="6" fill="#ffffff" stroke="#e0e6e0"/>
+  <text x="358" y="466" fill="#37474f" font-size="9" font-weight="700">2026</text>
+  <text x="280" y="500" fill="#78909c" font-size="9">Settings &amp; account</text>
+
+  <!-- main: title + tabs -->
+  <text x="410" y="132" fill="#37474f" font-size="15" font-weight="700">Beds</text>
+  <g>
+    <rect x="452" y="120" width="36" height="17" rx="5" fill="#eceff1"/>
+    <text x="459" y="132" fill="#37474f" font-size="9" font-weight="700">Beds</text>
+    <text x="498" y="132" fill="#78909c" font-size="9">Blocks</text>
+    <text x="538" y="132" fill="#78909c" font-size="9">Management Units</text>
+    <text x="632" y="132" fill="#78909c" font-size="9">Vines</text>
+  </g>
+
+  <!-- search + filter -->
+  <rect x="410" y="152" width="252" height="20" rx="6" fill="#ffffff" stroke="#e0e6e0"/>
+  <circle cx="422" cy="162" r="3.6" fill="none" stroke="#b0bec5" stroke-width="1.2"/>
+  <line x1="425" y1="165" x2="428" y2="168" stroke="#b0bec5" stroke-width="1.2"/>
+  <text x="434" y="166" fill="#b0bec5" font-size="8.5">Search beds by name or code…</text>
+  <rect x="670" y="152" width="48" height="20" rx="6" fill="#ffffff" stroke="#e0e6e0"/>
+  <text x="683" y="166" fill="#78909c" font-size="8.5">Filter</text>
+
+  <!-- grouped content -->
+  <text x="410" y="196" fill="#78909c" font-size="8.5" font-weight="700" letter-spacing="0.5">BLOCK A</text>
+  <g>
+    <rect x="410" y="204" width="96" height="30" rx="6" fill="#ffffff" stroke="#e8ebe8"/>
+    <text x="418" y="217" fill="#37474f" font-size="9" font-weight="700">A1</text>
+    <text x="418" y="228" fill="#90a4ae" font-size="7.5">MQ · 3.24 ac</text>
+    <rect x="514" y="204" width="96" height="30" rx="6" fill="#ffffff" stroke="#e8ebe8"/>
+    <text x="522" y="217" fill="#37474f" font-size="9" font-weight="700">A2</text>
+    <text x="522" y="228" fill="#90a4ae" font-size="7.5">GRYG · 2.55 ac</text>
+    <rect x="618" y="204" width="96" height="30" rx="6" fill="#ffffff" stroke="#e8ebe8"/>
+    <text x="626" y="217" fill="#37474f" font-size="9" font-weight="700">A3</text>
+    <text x="626" y="228" fill="#90a4ae" font-size="7.5">SW · 5.99 ac</text>
+  </g>
+  <text x="410" y="262" fill="#78909c" font-size="8.5" font-weight="700" letter-spacing="0.5">BLOCK B</text>
+  <g opacity="0.55">
+    <rect x="410" y="270" width="96" height="30" rx="6" fill="#ffffff" stroke="#e8ebe8"/>
+    <rect x="514" y="270" width="96" height="30" rx="6" fill="#ffffff" stroke="#e8ebe8"/>
+    <rect x="618" y="270" width="96" height="30" rx="6" fill="#ffffff" stroke="#e8ebe8"/>
+  </g>
+
+  <!-- callout leaders -->
+  <g stroke="#b0bec5" stroke-width="1.5" fill="none">
+    <line x1="230" y1="300" x2="260" y2="300"/>
+    <line x1="230" y1="462" x2="268" y2="462"/>
+    <line x1="560" y1="74" x2="560" y2="112"/>
+    <line x1="792" y1="150" x2="722" y2="162"/>
+  </g>
+  <g fill="#6aab3f">
+    <circle cx="260" cy="300" r="3"/><circle cx="268" cy="462" r="3"/>
+    <circle cx="560" cy="112" r="3"/><circle cx="722" cy="162" r="3"/>
+  </g>
+
+  <!-- callout text -->
+  <g fill="#37474f" font-size="13" text-anchor="end">
+    <text x="222" y="295" font-weight="700">The menu, in three groups</text>
+    <text x="222" y="312" font-size="11.5" fill="#607d8b">Overview · Operations · Records</text>
+    <text x="222" y="457" font-weight="700">Your farm, role &amp; season</text>
+    <text x="222" y="474" font-size="11.5" fill="#607d8b">the year lives here — not the top</text>
+  </g>
+  <g fill="#37474f" font-size="13" text-anchor="middle">
+    <text x="560" y="52" font-weight="700">Tabs</text>
+    <text x="560" y="68" font-size="11.5" fill="#607d8b">each section splits into views</text>
+  </g>
+  <g fill="#37474f" font-size="13" text-anchor="start">
+    <text x="800" y="146" font-weight="700">Search &amp; filter</text>
+    <text x="800" y="163" font-size="11.5" fill="#607d8b">search finds more than names</text>
+  </g>
+
+  <text x="500" y="570" text-anchor="middle" fill="#607d8b" font-size="12.5">Every section works this way: <tspan font-weight="700" fill="#37474f">pick it from the menu</tspan> → <tspan font-weight="700" fill="#37474f">choose a tab</tspan> → <tspan font-weight="700" fill="#37474f">search or filter</tspan>.</text>
+</svg>

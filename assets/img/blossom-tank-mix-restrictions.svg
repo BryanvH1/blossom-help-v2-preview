@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" role="img" aria-label="How Blossom works out the restrictions for a tank mix: three products each carry their own REI and PHI; the longest REI sets one binding re-entry hold for the whole treated area, and the longest PHI sets the earliest harvest date. The two can come from different products.">
+  <rect x="0" y="0" width="1000" height="600" rx="16" fill="#f6faf3"/>
+
+  <text x="500" y="46" text-anchor="middle" fill="#37474f" font-size="17" font-weight="700">Three products go on together. Two restrictions come out.</text>
+  <text x="500" y="70" text-anchor="middle" fill="#607d8b" font-size="12.5">Each product has its own REI and PHI — but the tank gets one of each.</text>
+
+  <!-- product cards -->
+  <g>
+    <rect x="70" y="100" width="260" height="130" rx="10" fill="#ffffff" stroke="#dfe6df" stroke-width="1.5"/>
+    <text x="90" y="127" fill="#37474f" font-size="13" font-weight="700">TIDE PPZ+Azoxy</text>
+    <text x="90" y="145" fill="#90a4ae" font-size="9.5">FRAC 11, FRAC 3</text>
+    <text x="90" y="178" fill="#78909c" font-size="9.5" letter-spacing="0.6">REI</text>
+    <text x="90" y="202" fill="#607d8b" font-size="20" font-weight="700">12 h</text>
+    <text x="210" y="178" fill="#78909c" font-size="9.5" letter-spacing="0.6">PHI</text>
+    <rect x="200" y="182" width="96" height="30" rx="7" fill="#fdecef" stroke="#e8879b" stroke-width="1.5"/>
+    <text x="210" y="203" fill="#b3123c" font-size="20" font-weight="700">45 d</text>
+  </g>
+  <g>
+    <rect x="370" y="100" width="260" height="130" rx="10" fill="#ffffff" stroke="#dfe6df" stroke-width="1.5"/>
+    <text x="390" y="127" fill="#37474f" font-size="13" font-weight="700">Sil-MATRIX LC</text>
+    <text x="390" y="145" fill="#90a4ae" font-size="9.5">no group listed</text>
+    <text x="390" y="178" fill="#78909c" font-size="9.5" letter-spacing="0.6">REI</text>
+    <text x="390" y="202" fill="#607d8b" font-size="20" font-weight="700">4 h</text>
+    <text x="510" y="178" fill="#78909c" font-size="9.5" letter-spacing="0.6">PHI</text>
+    <text x="510" y="202" fill="#607d8b" font-size="20" font-weight="700">0 d</text>
+  </g>
+  <g>
+    <rect x="670" y="100" width="260" height="130" rx="10" fill="#ffffff" stroke="#dfe6df" stroke-width="1.5"/>
+    <text x="690" y="127" fill="#37474f" font-size="13" font-weight="700">Badge SC</text>
+    <text x="690" y="145" fill="#90a4ae" font-size="9.5">FRAC M01</text>
+    <text x="690" y="178" fill="#78909c" font-size="9.5" letter-spacing="0.6">REI</text>
+    <rect x="680" y="182" width="96" height="30" rx="7" fill="#fff3e0" stroke="#e0a458" stroke-width="1.5"/>
+    <text x="690" y="203" fill="#a65c00" font-size="20" font-weight="700">48 h</text>
+    <text x="810" y="178" fill="#78909c" font-size="9.5" letter-spacing="0.6">PHI</text>
+    <text x="810" y="202" fill="#607d8b" font-size="20" font-weight="700">0 d</text>
+  </g>
+
+  <!-- leaders: longest REI (Badge) and longest PHI (TIDE) -->
+  <g fill="none" stroke-width="2.5" stroke-linecap="round">
+    <path d="M728 216 V 268 H 300 V 322" stroke="#e0a458"/>
+    <path d="M248 216 V 250 H 700 V 322" stroke="#e8879b"/>
+  </g>
+  <g font-size="10.5" font-weight="700">
+    <text x="470" y="262" fill="#a65c00" text-anchor="middle">longest REI wins</text>
+    <text x="470" y="243" fill="#b3123c" text-anchor="middle">longest PHI wins</text>
+  </g>
+
+  <!-- outputs -->
+  <g>
+    <rect x="70" y="330" width="440" height="118" rx="10" fill="#fff8ee" stroke="#e0a458" stroke-width="2"/>
+    <text x="94" y="360" fill="#a65c00" font-size="9.5" font-weight="700" letter-spacing="0.9">BINDING HOLD — WHEN ANYONE MAY GO BACK IN</text>
+    <text x="94" y="394" fill="#37474f" font-size="24" font-weight="700">48 hours</text>
+    <text x="94" y="420" fill="#607d8b" font-size="12">from <tspan font-weight="700">Badge SC</tspan> — not from the product you sprayed most of</text>
+    <text x="94" y="438" fill="#78909c" font-size="11">Covers the whole treated area, every bed, every product.</text>
+  </g>
+  <g>
+    <rect x="550" y="330" width="380" height="118" rx="10" fill="#fdf1f4" stroke="#e8879b" stroke-width="2"/>
+    <text x="574" y="360" fill="#b3123c" font-size="9.5" font-weight="700" letter-spacing="0.9">EARLIEST HARVEST</text>
+    <text x="574" y="394" fill="#37474f" font-size="24" font-weight="700">45 days</text>
+    <text x="574" y="420" fill="#607d8b" font-size="12">from <tspan font-weight="700">TIDE PPZ+Azoxy</tspan></text>
+    <text x="574" y="438" fill="#78909c" font-size="11">Or the REI, if that happens to run longer.</text>
+  </g>
+
+  <!-- key point -->
+  <rect x="70" y="470" width="860" height="62" rx="10" fill="#eef4ea" stroke="#c6d8bd"/>
+  <text x="94" y="497" fill="#37474f" font-size="13" font-weight="700">The two answers came from two different products.</text>
+  <text x="94" y="518" fill="#607d8b" font-size="12">That is the whole reason not to work this out in your head — the shortest REI and the longest PHI can sit in the same tank.</text>
+
+  <text x="500" y="566" text-anchor="middle" fill="#78909c" font-size="11.5">Longest REI governs a co-application (40 CFR Part 170). Blossom calculates from what you entered — <tspan font-weight="700" fill="#607d8b">the label always governs.</tspan></text>
+</svg>

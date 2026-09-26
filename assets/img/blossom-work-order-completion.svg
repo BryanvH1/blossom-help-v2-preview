@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="100%" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" role="img" aria-label="A work order finishes bed by bed. A four-bed order starts with none done. Recording completion on Tuesday for two beds leaves it two of four done and still open. Recording the remaining two on Thursday makes it four of four and the order closes. A target date that has passed while the order is still open is flagged overdue.">
+  <rect x="0" y="0" width="1000" height="580" rx="16" fill="#f6faf3"/>
+
+  <text x="500" y="44" text-anchor="middle" fill="#37474f" font-size="17" font-weight="700">A work order finishes bed by bed — not all at once</text>
+  <text x="500" y="68" text-anchor="middle" fill="#607d8b" font-size="12.5">Because a spray often runs over more than one day.</text>
+
+  <!-- the order -->
+  <rect x="330" y="96" width="340" height="96" rx="10" fill="#ffffff" stroke="#cfd8cf" stroke-width="1.5"/>
+  <text x="352" y="122" fill="#37474f" font-size="13" font-weight="700">Work order #1037</text>
+  <text x="352" y="141" fill="#90a4ae" font-size="10.5">Fruit rot · 4 beds · 18.47 ac</text>
+  <g font-size="10.5" font-weight="700">
+    <rect x="352" y="154" width="42" height="24" rx="6" fill="#ffffff" stroke="#b0bec5"/><text x="362" y="170" fill="#78909c">D7</text>
+    <rect x="400" y="154" width="42" height="24" rx="6" fill="#ffffff" stroke="#b0bec5"/><text x="410" y="170" fill="#78909c">S2</text>
+    <rect x="448" y="154" width="42" height="24" rx="6" fill="#ffffff" stroke="#b0bec5"/><text x="458" y="170" fill="#78909c">N2</text>
+    <rect x="496" y="154" width="42" height="24" rx="6" fill="#ffffff" stroke="#b0bec5"/><text x="506" y="170" fill="#78909c">Q6</text>
+  </g>
+  <text x="560" y="171" fill="#90a4ae" font-size="11">Lines 0 of 4 done</text>
+
+  <!-- branches -->
+  <g fill="none" stroke="#b0bec5" stroke-width="2">
+    <path d="M500 192 V 214 H 240 V 244"/>
+    <path d="M500 192 V 214 H 760 V 244"/>
+  </g>
+
+  <!-- step one -->
+  <rect x="70" y="250" width="340" height="180" rx="10" fill="#ffffff" stroke="#6aab3f" stroke-width="2"/>
+  <text x="92" y="278" fill="#4a8a28" font-size="9.5" font-weight="700" letter-spacing="0.9">TUESDAY — RECORD COMPLETION</text>
+  <text x="92" y="300" fill="#607d8b" font-size="11.5">You sprayed two of the four beds.</text>
+  <g font-size="10.5" font-weight="700">
+    <rect x="92" y="314" width="42" height="26" rx="6" fill="#e8f2df" stroke="#6aab3f" stroke-width="1.5"/><text x="102" y="331" fill="#4a8a28">D7</text>
+    <rect x="140" y="314" width="42" height="26" rx="6" fill="#e8f2df" stroke="#6aab3f" stroke-width="1.5"/><text x="150" y="331" fill="#4a8a28">S2</text>
+    <rect x="188" y="314" width="42" height="26" rx="6" fill="#ffffff" stroke="#cfd8cf"/><text x="198" y="331" fill="#b0bec5">N2</text>
+    <rect x="236" y="314" width="42" height="26" rx="6" fill="#ffffff" stroke="#cfd8cf"/><text x="246" y="331" fill="#b0bec5">Q6</text>
+  </g>
+  <text x="92" y="366" fill="#37474f" font-size="14" font-weight="700">Lines 2 of 4 done</text>
+  <rect x="92" y="382" width="66" height="24" rx="6" fill="#fff3e0" stroke="#e0a458"/>
+  <text x="104" y="399" fill="#a65c00" font-size="11" font-weight="700">Open</text>
+  <text x="170" y="399" fill="#607d8b" font-size="11.5">— the order stays put</text>
+
+  <!-- step two -->
+  <rect x="590" y="250" width="340" height="180" rx="10" fill="#ffffff" stroke="#6aab3f" stroke-width="2"/>
+  <text x="612" y="278" fill="#4a8a28" font-size="9.5" font-weight="700" letter-spacing="0.9">THURSDAY — RECORD COMPLETION AGAIN</text>
+  <text x="612" y="300" fill="#607d8b" font-size="11.5">You finished the other two.</text>
+  <g font-size="10.5" font-weight="700">
+    <rect x="612" y="314" width="42" height="26" rx="6" fill="#e8f2df" stroke="#6aab3f" stroke-width="1.5"/><text x="622" y="331" fill="#4a8a28">D7</text>
+    <rect x="660" y="314" width="42" height="26" rx="6" fill="#e8f2df" stroke="#6aab3f" stroke-width="1.5"/><text x="670" y="331" fill="#4a8a28">S2</text>
+    <rect x="708" y="314" width="42" height="26" rx="6" fill="#e8f2df" stroke="#6aab3f" stroke-width="1.5"/><text x="718" y="331" fill="#4a8a28">N2</text>
+    <rect x="756" y="314" width="42" height="26" rx="6" fill="#e8f2df" stroke="#6aab3f" stroke-width="1.5"/><text x="766" y="331" fill="#4a8a28">Q6</text>
+  </g>
+  <text x="612" y="366" fill="#37474f" font-size="14" font-weight="700">Lines 4 of 4 done</text>
+  <rect x="612" y="382" width="94" height="24" rx="6" fill="#e8f2df" stroke="#6aab3f"/>
+  <text x="624" y="399" fill="#4a8a28" font-size="11" font-weight="700">Completed</text>
+  <text x="718" y="399" fill="#607d8b" font-size="11.5">— it closes</text>
+
+  <text x="500" y="332" text-anchor="middle" fill="#90a4ae" font-size="20">→</text>
+
+  <!-- overdue -->
+  <rect x="70" y="452" width="860" height="72" rx="10" fill="#fdf1f4" stroke="#e8879b" stroke-width="1.5"/>
+  <text x="94" y="480" fill="#b3123c" font-size="12.5" font-weight="700">A half-finished order won't quietly disappear.</text>
+  <text x="94" y="503" fill="#607d8b" font-size="12">While it is still open, a <tspan font-weight="700">target date that has passed</tspan> is flagged <tspan font-weight="700" fill="#b3123c">overdue</tspan> — so the two beds you never got back to stay visible.</text>
+
+  <text x="500" y="556" text-anchor="middle" fill="#78909c" font-size="11.5">Each bed you tick records the date, weather and applicator for <tspan font-weight="700" fill="#607d8b">that day's work</tspan>, not the whole order.</text>
+</svg>

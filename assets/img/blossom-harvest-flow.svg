@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="100%" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" role="img" aria-label="Harvest data flow: imported handler deliveries and manually entered yields both set the barrels per bed, which roll up into your harvest summary.">
+  <rect x="0" y="0" width="1000" height="400" rx="16" fill="#f6faf3"/>
+  <text x="500" y="44" text-anchor="middle" fill="#607d8b" font-size="14">Barrels come from your handler's deliveries — or you can type them yourself.</text>
+
+  <!-- input A: deliveries -->
+  <rect x="56" y="78" width="250" height="96" rx="12" fill="#ffffff" stroke="#cfd8cf" stroke-width="1.5"/>
+  <text x="80" y="118" fill="#37474f" font-size="15" font-weight="700">Import deliveries</text>
+  <text x="80" y="142" fill="#607d8b" font-size="12.5">from your handler (Ocean Spray)</text>
+
+  <!-- input B: yields -->
+  <rect x="56" y="228" width="250" height="96" rx="12" fill="#ffffff" stroke="#cfd8cf" stroke-width="1.5"/>
+  <text x="80" y="268" fill="#37474f" font-size="15" font-weight="700">Yields tab</text>
+  <text x="80" y="292" fill="#607d8b" font-size="12.5">type barrels per bed</text>
+
+  <!-- connectors in -->
+  <g stroke="#6aab3f" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M306 126 H372 V185 H408"/>
+    <path d="M306 276 H372 V235 H408"/>
+    <path d="M620 210 H708"/>
+  </g>
+  <g fill="#6aab3f">
+    <path d="M408 179 l12 6 l-12 6 Z"/>
+    <path d="M408 229 l12 6 l-12 6 Z"/>
+    <path d="M708 204 l12 6 l-12 6 Z"/>
+  </g>
+  <text x="312" y="268" fill="#6aab3f" font-size="11.5" font-style="italic">overrides</text>
+
+  <!-- middle: barrels per bed -->
+  <rect x="422" y="155" width="198" height="110" rx="12" fill="#6aab3f"/>
+  <text x="521" y="215" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">Barrels per bed</text>
+
+  <!-- right: summary -->
+  <rect x="722" y="150" width="228" height="120" rx="12" fill="#ffffff" stroke="#cfd8cf" stroke-width="1.5"/>
+  <text x="746" y="186" fill="#37474f" font-size="15" font-weight="700">Harvest summary</text>
+  <text x="746" y="212" fill="#607d8b" font-size="12.5">% harvested</text>
+  <text x="746" y="232" fill="#607d8b" font-size="12.5">total barrels</text>
+  <text x="746" y="252" fill="#607d8b" font-size="12.5">barrels / acre</text>
+</svg>

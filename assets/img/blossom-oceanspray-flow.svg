@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="100%" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" role="img" aria-label="Ocean Spray upload: your Blossom beds and the Ocean Spray bed list are matched, then your pesticide use is uploaded to Ocean Spray.">
+  <rect x="0" y="0" width="1000" height="400" rx="16" fill="#f6faf3"/>
+  <text x="500" y="44" text-anchor="middle" fill="#607d8b" font-size="14">Match your beds to Ocean Spray's, then upload your pesticide use.</text>
+
+  <rect x="56" y="78" width="250" height="96" rx="12" fill="#ffffff" stroke="#cfd8cf" stroke-width="1.5"/>
+  <text x="80" y="118" fill="#37474f" font-size="15" font-weight="700">Your Blossom beds</text>
+  <text x="80" y="142" fill="#607d8b" font-size="12.5">your bed names</text>
+
+  <rect x="56" y="228" width="250" height="96" rx="12" fill="#ffffff" stroke="#cfd8cf" stroke-width="1.5"/>
+  <text x="80" y="268" fill="#37474f" font-size="15" font-weight="700">Ocean Spray bed list</text>
+  <text x="80" y="292" fill="#607d8b" font-size="12.5">their bed names</text>
+
+  <g stroke="#6aab3f" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M306 126 H372 V185 H408"/>
+    <path d="M306 276 H372 V235 H408"/>
+    <path d="M620 210 H708"/>
+  </g>
+  <g fill="#6aab3f">
+    <path d="M408 179 l12 6 l-12 6 Z"/>
+    <path d="M408 229 l12 6 l-12 6 Z"/>
+    <path d="M708 204 l12 6 l-12 6 Z"/>
+  </g>
+
+  <rect x="422" y="155" width="198" height="110" rx="12" fill="#6aab3f"/>
+  <text x="521" y="205" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">Match beds</text>
+  <text x="521" y="227" text-anchor="middle" fill="#eaf5e0" font-size="12">auto-match + adjust</text>
+
+  <rect x="722" y="150" width="228" height="120" rx="12" fill="#ffffff" stroke="#cfd8cf" stroke-width="1.5"/>
+  <text x="746" y="192" fill="#37474f" font-size="15" font-weight="700">Upload to Ocean Spray</text>
+  <text x="746" y="218" fill="#607d8b" font-size="12.5">by contract number</text>
+  <text x="746" y="238" fill="#607d8b" font-size="12.5">your PUR, their format</text>
+</svg>

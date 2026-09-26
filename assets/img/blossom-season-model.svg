@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 660" width="100%" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" role="img" aria-label="What belongs to a season and what carries across. Season records — beds, applications, tests, scouting, water, vine work, maintenance, harvest, handler contracts and scout groups — are tied to the year in the selector at the bottom left, and a new season starts empty. Farm settings, users and roles, work order types, products, equipment, mechanics and licensed applicators are set once and carry across every season.">
+  <rect x="0" y="0" width="1000" height="660" rx="16" fill="#f6faf3"/>
+
+  <text x="500" y="46" text-anchor="middle" fill="#37474f" font-size="17" font-weight="700">Two kinds of thing live in Blossom</text>
+  <text x="500" y="70" text-anchor="middle" fill="#607d8b" font-size="12.5">Some records belong to one season. The rest you set up once.</text>
+
+  <!-- season column -->
+  <rect x="60" y="100" width="420" height="390" rx="12" fill="#ffffff" stroke="#6aab3f" stroke-width="2"/>
+  <rect x="60" y="100" width="420" height="52" rx="12" fill="#eef4ea"/>
+  <rect x="60" y="140" width="420" height="12" fill="#eef4ea"/>
+  <text x="84" y="124" fill="#4a8a28" font-size="9.5" font-weight="700" letter-spacing="0.9">BELONGS TO A SEASON</text>
+  <text x="84" y="142" fill="#607d8b" font-size="11.5">Follows the year you have selected</text>
+  <g fill="#37474f" font-size="12.5">
+    <text x="84" y="186">Beds, blocks &amp; management units</text>
+    <text x="84" y="216">Applications &amp; work orders</text>
+    <text x="84" y="246">Soil &amp; tissue tests</text>
+    <text x="84" y="276">Scouting reports &amp; traps</text>
+    <text x="84" y="306">Water events, pumps &amp; rainfall</text>
+    <text x="84" y="336">Vine work — sanding, pruning, mowing</text>
+    <text x="84" y="366">Maintenance events</text>
+    <text x="84" y="396">Harvest, yields &amp; deliveries</text>
+    <text x="84" y="426">Handler contracts</text>
+    <text x="84" y="456">Scout groups</text>
+  </g>
+  <g fill="#6aab3f">
+    <circle cx="72" cy="182" r="2.6"/><circle cx="72" cy="212" r="2.6"/><circle cx="72" cy="242" r="2.6"/>
+    <circle cx="72" cy="272" r="2.6"/><circle cx="72" cy="302" r="2.6"/><circle cx="72" cy="332" r="2.6"/>
+    <circle cx="72" cy="362" r="2.6"/><circle cx="72" cy="392" r="2.6"/><circle cx="72" cy="422" r="2.6"/>
+    <circle cx="72" cy="452" r="2.6"/>
+  </g>
+
+  <!-- carries across column -->
+  <rect x="520" y="100" width="420" height="390" rx="12" fill="#ffffff" stroke="#b0bec5" stroke-width="2"/>
+  <rect x="520" y="100" width="420" height="52" rx="12" fill="#eceff1"/>
+  <rect x="520" y="140" width="420" height="12" fill="#eceff1"/>
+  <text x="544" y="124" fill="#546e7a" font-size="9.5" font-weight="700" letter-spacing="0.9">CARRIES ACROSS EVERY SEASON</text>
+  <text x="544" y="142" fill="#607d8b" font-size="11.5">Set up once; the year selector doesn't touch it</text>
+  <g fill="#37474f" font-size="12.5">
+    <text x="544" y="186">Farm settings</text>
+    <text x="544" y="216">Users &amp; roles</text>
+    <text x="544" y="246">Work order types</text>
+    <text x="544" y="276">Products — pesticides, fertilizers, adjuvants</text>
+    <text x="544" y="306">Equipment &amp; machine groups</text>
+    <text x="544" y="336">Mechanics</text>
+    <text x="544" y="366">Licensed applicators</text>
+  </g>
+  <g fill="#90a4ae">
+    <circle cx="532" cy="182" r="2.6"/><circle cx="532" cy="212" r="2.6"/><circle cx="532" cy="242" r="2.6"/>
+    <circle cx="532" cy="272" r="2.6"/><circle cx="532" cy="302" r="2.6"/><circle cx="532" cy="332" r="2.6"/>
+    <circle cx="532" cy="362" r="2.6"/>
+  </g>
+
+  <!-- year selector -->
+  <line x1="270" y1="490" x2="270" y2="524" stroke="#6aab3f" stroke-width="2"/>
+  <rect x="196" y="524" width="148" height="46" rx="9" fill="#ffffff" stroke="#6aab3f" stroke-width="2"/>
+  <text x="216" y="545" fill="#37474f" font-size="16" font-weight="700">2026</text>
+  <path d="M296 538 l6 -7 l6 7" fill="none" stroke="#78909c" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M296 552 l6 7 l6 -7" fill="none" stroke="#78909c" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="270" y="590" text-anchor="middle" fill="#607d8b" font-size="11.5">bottom-left, beside your farm name</text>
+
+  <!-- consequence -->
+  <rect x="520" y="512" width="420" height="94" rx="10" fill="#fff8ee" stroke="#e0a458" stroke-width="1.5"/>
+  <text x="544" y="540" fill="#a65c00" font-size="12.5" font-weight="700">A new season starts empty on the left.</text>
+  <text x="544" y="562" fill="#607d8b" font-size="11.5">In January your pumps, contracts and management units</text>
+  <text x="544" y="580" fill="#607d8b" font-size="11.5">will look missing. They aren't — they belong to last year.</text>
+  <text x="544" y="598" fill="#607d8b" font-size="11.5">Set them up again for the new one.</text>
+
+  <text x="500" y="636" text-anchor="middle" fill="#78909c" font-size="11.5">If something you expected has vanished, <tspan font-weight="700" fill="#607d8b">check the year before you check anything else.</tspan></text>
+</svg>
