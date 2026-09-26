@@ -12,7 +12,7 @@
       underline indicator on change, so a tab restored from storage otherwise
       shows the right content under the wrong underline. */
 (function () {
-  window.__deviceTabs = "3";                                 /* build marker, for checking what a browser loaded */
+  window.__deviceTabs = "4";                                 /* build marker, for checking what a browser loaded */
   var PHONE = "(max-width: 44.9375em)";
   var canStore = typeof __md_get === "function" && typeof __md_set === "function";
   try { localStorage.removeItem("__tabs"); } catch (e) {}   /* key from the first build */
@@ -22,28 +22,39 @@
     return label ? label.textContent.trim() : "";
   }
 
+  /* Material draws the underline (--md-indicator-x on the set) only after
+     it has mounted the tabs and seen a change event. Mounting is async, so
+     a single event can arrive too early. Nudge until the underline exists,
+     for up to three seconds; sets that are still off-screen keep the last
+     active label and draw correctly when scrolled into view. */
+  function nudge(attempt) {
+    var pending = false;
+    document.querySelectorAll(".tabbed-set").forEach(function (set) {
+      if (set.style.getPropertyValue("--md-indicator-x")) return;
+      var pick = set.querySelector(":scope > input:checked");
+      if (!pick) return;
+      pick.dispatchEvent(new Event("change", { bubbles: true }));
+      pending = true;
+    });
+    if (pending && attempt < 30) setTimeout(function () { nudge(attempt + 1); }, 100);
+  }
+
   function apply() {
     var stored = null;
     try { stored = canStore ? __md_get("__tabs") : null; } catch (e) {}
-    var want = null;
     if (!(Array.isArray(stored) && stored.length)) {
-      want = window.matchMedia(PHONE).matches ? "Phone" : "Desktop";
+      var want = window.matchMedia(PHONE).matches ? "Phone" : "Desktop";
       try { if (canStore) __md_set("__tabs", [want]); } catch (e) {}
+      document.querySelectorAll(".tabbed-set").forEach(function (set) {
+        Array.prototype.forEach.call(set.children, function (el) {
+          if (el.tagName === "INPUT" && labelOf(el) === want) el.checked = true;
+        });
+      });
     }
-    document.querySelectorAll(".tabbed-set").forEach(function (set) {
-      var inputs = Array.prototype.slice.call(set.children).filter(function (el) { return el.tagName === "INPUT"; });
-      var pick = null;
-      if (want) pick = inputs.filter(function (i) { return labelOf(i) === want; })[0] || null;
-      if (!pick) pick = inputs.filter(function (i) { return i.checked; })[0] || null;
-      if (!pick) return;
-      pick.checked = true;
-      pick.dispatchEvent(new Event("change", { bubbles: true }));
-    });
+    nudge(0);
   }
 
-  if (typeof document$ !== "undefined" && document$ && typeof document$.subscribe === "function") {
-    document$.subscribe(function () { setTimeout(apply, 0); });
-  } else if (document.readyState === "loading") {
+  if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", apply);
   } else {
     apply();
