@@ -230,3 +230,31 @@
     display: none;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   Desktop / Phone tabs.
+   Pages whose screen differs on a phone carry two content tabs. Material
+   links them by label across the site (content.tabs.link) and remembers the
+   choice; javascripts/device-tabs.js picks the starting tab by screen size.
+   Phone captures are 760px wide (390 CSS px at ~2x) and portrait, so they
+   are shown at a phone's proportions rather than stretched to the column.
+--------------------------------------------------------------------------- */
+.md-typeset .tabbed-set { margin-block: 1em; }
+.md-typeset .tabbed-labels > label {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+.md-typeset .tabbed-block .phone-shot,
+.md-typeset a.zoomable.phone-shot {
+  max-width: 330px;
+  margin-inline: auto;
+}
+.md-typeset a.zoomable.phone-shot img {
+  border: 1px solid #d9dfd9;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+}
+@media screen and (max-width: 44.9375em) {
+  .md-typeset a.zoomable.phone-shot { max-width: 300px; }
+}
