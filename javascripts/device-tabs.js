@@ -12,7 +12,7 @@
       underline indicator on change, so a tab restored from storage otherwise
       shows the right content under the wrong underline. */
 (function () {
-  window.__deviceTabs = "4";                                 /* build marker, for checking what a browser loaded */
+  window.__deviceTabs = "5";                                 /* build marker, for checking what a browser loaded */
   var PHONE = "(max-width: 44.9375em)";
   var canStore = typeof __md_get === "function" && typeof __md_set === "function";
   try { localStorage.removeItem("__tabs"); } catch (e) {}   /* key from the first build */
@@ -22,21 +22,24 @@
     return label ? label.textContent.trim() : "";
   }
 
-  /* Material draws the underline (--md-indicator-x on the set) only after
-     it has mounted the tabs and seen a change event. Mounting is async, so
-     a single event can arrive too early. Nudge until the underline exists,
-     for up to three seconds; sets that are still off-screen keep the last
-     active label and draw correctly when scrolled into view. */
+  /* Material draws the underline by setting --md-indicator-x / -width on the
+     set, but only once its own observers have fired, which on a fresh page
+     does not happen until the reader scrolls. Until then the underline sits
+     under the first tab even when another tab's content is showing. So set
+     the same two properties ourselves from the checked label; Material
+     overwrites them with identical values when it catches up. */
+  function drawIndicator(set) {
+    var input = set.querySelector(":scope > input:checked");
+    var label = input && document.querySelector('label[for="' + input.id + '"]');
+    if (!label) return;
+    set.style.setProperty("--md-indicator-x", label.offsetLeft + "px");
+    set.style.setProperty("--md-indicator-width", label.getBoundingClientRect().width + "px");
+    input.dispatchEvent(new Event("change", { bubbles: true }));
+  }
+
   function nudge(attempt) {
-    var pending = false;
-    document.querySelectorAll(".tabbed-set").forEach(function (set) {
-      if (set.style.getPropertyValue("--md-indicator-x")) return;
-      var pick = set.querySelector(":scope > input:checked");
-      if (!pick) return;
-      pick.dispatchEvent(new Event("change", { bubbles: true }));
-      pending = true;
-    });
-    if (pending && attempt < 30) setTimeout(function () { nudge(attempt + 1); }, 100);
+    document.querySelectorAll(".tabbed-set").forEach(drawIndicator);
+    if (attempt < 5) setTimeout(function () { nudge(attempt + 1); }, 200);   /* fonts settle */
   }
 
   function apply() {
