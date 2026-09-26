@@ -205,3 +205,28 @@
     letter-spacing: .01em;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   Keep the Blossom mark visible on a phone.
+   Material hides the header logo below desktop width to make room for the
+   hamburger. The wordmark is too wide to simply un-hide — it squeezes the
+   title to "Help …" — so on small screens we swap in the logomark alone and
+   leave the wordmark for wider screens.
+--------------------------------------------------------------------------- */
+
+@media screen and (max-width: 76.1875em) {
+  .md-header__button.md-logo {
+    display: inline-flex !important;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    margin: 0 .3rem 0 .1rem;
+    background: url("../assets/img/logo-mark.svg") center / contain no-repeat;
+  }
+
+  .md-header__button.md-logo img,
+  .md-header__button.md-logo svg {
+    display: none;
+  }
+}
